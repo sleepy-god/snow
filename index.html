@@ -14,32 +14,29 @@
 			float:none;
 			opacity: 1;
 		}
+		.box{
+			display: flex;
+			justify-content: center;
+		}
 		.opt{
 			background-color:#99F;
 			width:430px;
 			height:50px;
-			float:left;
 			margin:0 auto;
-			margin-right:50px;
+				margin-right:50px;
 			margin-left:auto;
-			line-height:20px;
+			line-height:50px;
 			text-align:center;
 			opacity:0.5;
 			cursor:pointer;
 			}
-		#opt1{
-			margin-left:60px;
-			}
-		#opt2{
-			margin-right:20px;
-		}
 		.art1{
 			background-color:#CFF;
 			width:430px;
 			height:560px;
 			margin-left:60px;
-			margin-right:50px;
-			float:left;
+			margin-right: 50px;
+			margin-top: -24px;
 			text-align:center;
 			opacity:0.9;
 			}
@@ -47,20 +44,29 @@
 			background-color:#CFF;
 			width:430px;
 			height:560px;
-			float:left;
 			opacity:0.9;
+			margin-left: auto;
+			margin-right: 50px;
+			margin-top: -24px;
 			text-align:center;
 			}
-		#art2_pm{float: left;margin-left:  20px;margin-right: 30px;margin-bottom:2px;}
-		#art2_gjc{float: left;margin-bottom:2px;}
-		#art2_sszs{float: right;margin-right: 55px;margin-bottom:2px;}
-		#order{float:left;margin-left:35px;}
-		#art3{
-			margin-left:50px;
+		.art3{
+			background-color:#CFF;
+			width:430px;
+			height:560px;
+			opacity:0.9;
+			margin-left: auto;
+			margin-right: 50px;
+			margin-top: -24px;
+			text-align:center;
 			}
+		}
+		#art2_pm{margin-left:20px;margin-right:50px;margin-bottom:2px;}
+		#art2_gjc{margin-left:70px;margin-right:70px;margin-bottom:2px;}
+		#art2_sszs{margin-left:70px;margin-right: 5px;margin-bottom:2px;}
+		#order{float:left;margin-left:35px;}
 		#more{
 			float:right;
-			
 		}
 		.artical{
 			background-color:#CFC;
@@ -70,6 +76,7 @@
 			overflow-y:auto;
 			text-align:left;
 			opacity:0.6;
+
 			}
 		#artical_art2{
 			float:left;
@@ -83,7 +90,7 @@
 				text-align:center;
 				font-family:Arial;
 				font-size:12px;
-				letter-spacing:1px;		
+				letter-spacing:1px;				
 			}
 		#state{
 				font-weight:600;
@@ -95,7 +102,6 @@
 				text-align:center;
 			}
 		#col2{
-				color:
 				text-indent:-2em;
 				padding-left:2em;
 			}
@@ -104,6 +110,7 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size:100% 100%; 
+	position:relative;
 	}
     </style>
 </head>
@@ -111,16 +118,12 @@
 <body style="background-color:#9CC;">
 	<div id="header">
 	  <h1>星雪百科</h1></div>
-	<a href="http://news.ifeng.com/"><div class="opt" id="opt1"><h5>实时热点</h5></div></a>
-	<a href="https://baike.baidu.com/"><div class="opt"><h5>分类查询</h5></div></a>
-	<a href="https://www.bilibili.com/"><div class="opt" id="opt2"><h5>星雪世界</h5></div></a>
-	<div>
-		<div class="art1">
-				<div>
-					<h6><div id="more"><a href="http://politics.people.com.cn/">more>></a></div></h6>
-					<h3>时政要闻</h3>
-
-				</div><br/>
+	<div class="box">
+		<div>
+			<div class="opt" id="opt1"><a href="http://news.ifeng.com/"><h5>实时热点</h5></a></div>
+			<div class="art1">
+					<h6><div id="more"><a href="http://politics.people.com.cn/"> more>>&nbsp;</a></div></h6>
+					<h3>时政要闻</h3><br/>
 				   <div  class="artical">
 			<a href="https://news.sina.com.cn/china/"><p align="center">【国内】</p></a><br />
 				<p>    &nbsp;&nbsp;&nbsp;&nbsp;     1、中共中央办公厅、国务院办公厅印发了《防范和惩治统计造假、弄虚作假督察工作规定》，并发出通知，要求各地区各部门认真遵照执行。<br /><br />
@@ -156,73 +159,79 @@
 	&nbsp;&nbsp;&nbsp;&nbsp; 3、中国扶贫基金会常务副秘书长陈红涛近日表示，3年来基金会实施的项目覆盖缅甸8个省邦，40588人受益。<br /><br />
 
 	&nbsp;&nbsp;&nbsp;&nbsp; 4、第十五届中国—东盟博览会、中国—东盟商务与投资峰会15日在广西南宁闭幕。据悉，本届中国—东盟博览会展览总面积12.4万平方米，总展位数6600个，参展企业2780家，比上届增长2.6%， 8个东盟国家包馆。会期举办贸易投资促进活动91场，投资合作项目涵盖中国20多个省区与东盟及欧美等10多个国家。东盟国家的农产品、生活消费品、轻工工艺品，中国的工程机械、食品包装机械、电力设备、卫生洁具等商品成交踊跃。<br /><br /></p>
-				
+				</div>
 			</div>
 		</div>
-			<div class="art2">
-				<div>
-					<h6><div id="more"><a href="https://www.baidu.com/link?url=0lZaYhHXYaOHGQHQNbnoWvh9VCgXsxqoygKXvuKEcM3&wd=&eqid=f75a2e580004361f000000025bab8d48">more>></a></div></h6>
+			<div >
+				<div class="opt"><a href="https://baike.baidu.com/"><h5>分类查询</h5></a></div>
+				<div class="art2">
+					<h6><div id="more"><a href="https://www.baidu.com/link?url=0lZaYhHXYaOHGQHQNbnoWvh9VCgXsxqoygKXvuKEcM3&wd=&eqid=f75a2e580004361f000000025bab8d48"> more>> </a></div></h6>
 					<h3>搜索排行</h3>
-				</div><br/>
+				<br/>
 				<div class="artical">
-					<div id="art2_pm"><p>排名</p></div>
-					<div id="art2_gjc"><p>关键词</p></div>
-					<div id="art2_sszs"><p>搜索指数</p></div><br/><br/><br/><hr/>
+					<div class="box">
+					<div id="art2_pm">排名</div>
+					<div id="art2_gjc">关键词</div>
+						<div id="art2_sszs">搜索指数</div></div><hr/>
 					
 					<div id="order">
+						<form>
 						<li>
-							<p>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BE%AF%B7%BD%C8%B7%C8%CF%20%D5%C5%D3%EA%E7%B2">
-							警方确认&nbsp;&nbsp;&nbsp; 张雨绮</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;490703</p>
-						</li>
+							1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BE%AF%B7%BD%C8%B7%C8%CF%20%D5%C5%D3%EA%E7%B2">
+							警方确认&nbsp;&nbsp;&nbsp; 张雨绮</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;490703
+						</li><br />
 						<li>
-							<p>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B7%D1%D3%F1%C7%E5%CD%CB%B3%F6%D1%DD%D2%D5%C8%A6">
-							费玉清退出演艺圈</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;478407</p>
-						</li>
+							2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B7%D1%D3%F1%C7%E5%CD%CB%B3%F6%D1%DD%D2%D5%C8%A6">
+							费玉清退出演艺圈</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;478407
+						</li><br />
 						<li>
-							<p>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=iPhone%C4%B9%B1%AE">
-							iphon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;墓碑</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;338503</p>
-						</li>
+							3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=iPhone%C4%B9%B1%AE">
+							iphon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;墓碑</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;338503
+						</li><br />
 						<li>
-							<p>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BA%A3%B5%D7%C0%CC%B9%C9%BC%DB%C6%C6%B7%A2">
-							海底捞&nbsp;&nbsp;&nbsp;&nbsp;股价破发</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;316911</p>
-						</li>
+							4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BA%A3%B5%D7%C0%CC%B9%C9%BC%DB%C6%C6%B7%A2">
+							海底捞&nbsp;&nbsp;&nbsp;&nbsp;股价破发</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;316911
+						</li><br />
 						<li>
-							<p>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C8%F0%B5%E4%C8%E8%BB%AA%BD%DA%C4%BF%B5%C0%C7%B8">
-							瑞典辱华节目道歉</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;305664</p>
-						</li>
+							5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C8%F0%B5%E4%C8%E8%BB%AA%BD%DA%C4%BF%B5%C0%C7%B8">
+							瑞典辱华节目道歉</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;305664
+						</li><br />
 						<li>
-							<p>6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BC%D6%D4%BE%CD%A4%20%BB%B9%D5%AE">
-							贾跃亭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还债</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;300416</p>
-						</li>
+							6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BC%D6%D4%BE%CD%A4%20%BB%B9%D5%AE">
+							贾跃亭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还债</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;300416
+						</li><br />
 						<li>
-							<p>7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%D5%C5%D1%A7%D3%D1%D1%DD%B3%AA%BB%E1%CC%D3%B7%B8">
-							张学友演唱会逃犯</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;287520</p>
-						</li>
+							7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%D5%C5%D1%A7%D3%D1%D1%DD%B3%AA%BB%E1%CC%D3%B7%B8">
+							张学友演唱会逃犯</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;287520
+						</li><br />
 						<li>
-							<p>8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CC%D8%CB%B9%C0%AD%B4%F3%B5%F814%25">
-							特斯拉&nbsp;&nbsp;&nbsp;&nbsp;大跌14%</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;282872</p>
-						</li>
+							8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CC%D8%CB%B9%C0%AD%B4%F3%B5%F814%25">
+							特斯拉&nbsp;&nbsp;&nbsp;&nbsp;大跌14%</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;282872
+						</li><br />
 						<li>
-							<p>9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=C%C2%DE%D4%E2%D0%D4%C7%D6%D6%B8%BF%D8">
-							C罗&nbsp;&nbsp;&nbsp;遭性侵指控</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;271926</p>
-						</li>
+							9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=C%C2%DE%D4%E2%D0%D4%C7%D6%D6%B8%BF%D8">
+							C罗&nbsp;&nbsp;&nbsp;遭性侵指控</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;271926
+						</li><br />
 						<li>
-							<p>10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C4%D0%C9%FA%B3%CB%B5%CE%B5%CE%D4%E2%E2%AB%D9%F4">
-							男生乘滴滴遭猥亵</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;263378</p>
-						</li>
+							10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C4%D0%C9%FA%B3%CB%B5%CE%B5%CE%D4%E2%E2%AB%D9%F4">
+							男生乘滴滴遭猥亵</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;263378
+						</li><br />
+						</form>
 					</div><br/>
 					
 				</div>
-			  
+				</div>
 			</div>
-		<div class="art2" id="art3">
-					<h6><div id="more"><a href="https://www.baidu.com/link?url=0lZaYhHXYaOHGQHQNbnoWvh9VCgXsxqoygKXvuKEcM3&wd=&eqid=f75a2e580004361f000000025bab8d48">more>></a></div></h6>
-					<h3>网站介绍</h3><br/>
+		<div>	
+			<div class="opt"><a href="https://www.bilibili.com/"><h5>星雪世界</h5></a></div>
+			<div class="art3">
+				<h6><div id="more"><a href="https://www.baidu.com/link?url=0lZaYhHXYaOHGQHQNbnoWvh9VCgXsxqoygKXvuKEcM3&wd=&eqid=f75a2e580004361f000000025bab8d48"> more>> </a></div></h6>
+				<h3>网站介绍</h3><br/>
 				<div class="artical" id="intro">
 					<marquee direction="right"> 欢迎来到我们的世界！<br /></marquee><hr/>
 					<h4 id="col1">--->”星雪百科“由&nbsp;星雪工作室&nbsp;制作<---</h4>
 					<h5 id="col1">这是一个属于雪夜星空的绝美故事</h5>
-					<h5 id="col1">我们是这个故事的缔造者，这个故事也由我们而变得生动美妙</h5>
+					<h5 id="col1">我们是这个格式的缔造者，这个故事也由我们而变得生动美妙</h5>
 					<h5 id="col1">不问出身,只求真谛,这是一群年轻强者的聚集地,怀揣梦想,并为之奋斗着</h5>
 					<p style="text-align:center">-----------------------------------------------------------</p>
 					<p id="col2">|&nbsp;&nbsp;组织隶属：星雪圣域&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>
@@ -230,10 +239,10 @@
 					<p id="col2">|&nbsp;&nbsp;负责人：天谦星&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>			
 					<br/><br/><br/><hr/>
 					<div id="state">&nbsp;<strong style="text-align:center">----->此网站站不用于任何商业竞争，纯属娱乐！<-----</strong></div>
-				</div>		
-		</div>
+						</div>		
+						</div>
+				</div>
 		
-    </div>
 		<br/><br/>
 	 <div class="foot">&copy;2018 - 3000 星雪工作室</div>
 </body>
