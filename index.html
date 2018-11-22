@@ -9,11 +9,36 @@
 		a:hover {color: #00FF00} /* 鼠标移动到链接上 */
 		a:active {color: #0000FF}
 		#header{
-			padding:5px;
+			background-image: url(星空.jpeg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size:100% 100%; 
+			position:relative;
 			text-align:center;
 			float:none;
+			margin-top: -15px;
+			margin-left: -15px;
+			margin-right: -15px;
+			padding-top:10px;
 			opacity: 1;
 		}
+		nav{
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		}
+		.rim{
+			margin-top: -20px;
+		}
+		.navigation{
+			
+		}		
+		#header_nav{
+			   list-style: none;
+			float: left; //向左排列
+			margin-left: 25px;
+			width: 160px;
+		}	
 		.box{
 			display: flex;
 			justify-content: center;
@@ -33,37 +58,39 @@
 		.art1{
 			background-color:#CFF;
 			width:430px;
-			height:535px;
+			height:520px;
 			margin-left:60px;
 			margin-right: 50px;
-			margin-top: -24px;
+			margin-top: -25px;
+			padding-bottom: -15px;
 			text-align:center;
 			opacity:0.9;
 			}
 		.art2{
 			background-color:#CFF;
 			width:430px;
-			height:535px;
+			height:520px;
 			opacity:0.9;
 			margin-left: auto;
 			margin-right: 50px;
 			margin-top: -24px;
+			padding-bottom: -15px;
 			text-align:center;
 			}
 		.art3{
 			background-color:#CFF;
 			width:430px;
-			height:535px;
+			height:520px;
 			opacity:0.9;
 			margin-left: auto;
 			margin-right: 50px;
 			margin-top: -24px;
 			text-align:center;
-			}
-		}
+			}		
+		
 		#art2_pm{margin-left:20px;margin-right:50px;margin-bottom:2px;}
-		#art2_gjc{margin-left:70px;margin-right:70px;margin-bottom:2px;}
-		#art2_sszs{margin-left:70px;margin-right: 5px;margin-bottom:2px;}
+		#art2_gjc{margin-left:50px;margin-right:70px;margin-bottom:2px;}
+		#art2_sszs{margin-left:70px;margin-right: 25px;margin-bottom:2px;}
 		#order{float:left;margin-left:35px;}
 		#more{
 			float:right;
@@ -71,16 +98,27 @@
 		.artical{
 			background-color:#CFC;
 			width:430px;
-			height:470px;
+			height:475px;
 			overflow-x:auto;
 			overflow-y:auto;
 			text-align:left;
 			opacity:0.6;
-
 			}
+		#artical_art1{
+			background-color:#CFC;
+			width:430px;
+			height: 471px;
+			overflow-x:auto;
+			overflow-y:auto;
+			text-align:left;
+			opacity:0.6;
+		}
+		.opt_nav{
+			margin-bottom: -15px;
+		}
 		#artical_art2{
 			float:left;
-			}
+		}
 		.foot{
 				height:40px;
 				line-height:60px;
@@ -105,26 +143,45 @@
 				text-indent:-2em;
 				padding-left:2em;
 			}
-	body {
-	background-image:url(%E6%98%9F%E7%A9%BA2.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size:100% 100%; 
-	position:relative;
-	}
-    </style>
-</head>
+		body {
+		background-image:url(%E6%98%9F%E7%A9%BA2.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size:100% 100%; 
+		position:relative;
 
+		}
+
+
+</style>
+	<script>
+		
+	</script>
+</head>
 <body style="background-color:#9CC;">
 	<div id="header">
-	  <h1>星雪百科</h1></div>
+	  <h1 style="color: hsla(254,87%,53%,1.00)">星雪百科</h1>
+		<nav draggable="true">
+			<ul>
+				<li id="header_nav"><a href="星雪百科.html" class="navigation"><h3>首页</h3></a></li>
+				<li id="header_nav"><a href="https://map.baidu.com" class="navigation"><h3>地图</h3></a></li>
+				<li id="header_nav"><a href="http://www.cnki.net" class="navigation"><h3>专业论文</h3></a></li>
+				<li id="header_nav"><a href="bbs.html" class="navigation"><h3>论坛</h3></a></li>
+				<li id="header_nav"><a href="star.html" class="navigation"><h3>星雪世界</h3></a></li>
+				<li id="header_nav"><a href="contact" class="navigation"><h3>联系GM</h3></a></li>
+			</ul>
+	</nav>
+	</div>
+
 	<div class="box">
-		<div>
+		<div class="rim">
 			<div class="opt" id="opt1"><a href="http://news.ifeng.com/"><h5>实时热点</h5></a></div>
 			<div class="art1">
 					<h6><div id="more"><a href="http://politics.people.com.cn/"> more>>&nbsp;</a></div></h6>
-					<h3>时政要闻</h3><br/>
-				   <div  class="artical">
+					<div class="opt_nav">
+						<h3>时政要闻</h3><br/>
+					</div>
+				   <div id="artical_art1">
 			<a href="https://news.sina.com.cn/china/"><p align="center">【国内】</p></a><br />
 				<p>    &nbsp;&nbsp;&nbsp;&nbsp;     1、中共中央办公厅、国务院办公厅印发了《防范和惩治统计造假、弄虚作假督察工作规定》，并发出通知，要求各地区各部门认真遵照执行。<br /><br />
 
@@ -162,17 +219,21 @@
 				</div>
 			</div>
 		</div>
-			<div >
+			<div class="rim">
 				<div class="opt"><a href="https://baike.baidu.com/"><h5>分类查询</h5></a></div>
 				<div class="art2">
 					<h6><div id="more"><a href="https://www.baidu.com/link?url=0lZaYhHXYaOHGQHQNbnoWvh9VCgXsxqoygKXvuKEcM3&wd=&eqid=f75a2e580004361f000000025bab8d48"> more>> </a></div></h6>
-					<h3>搜索排行</h3>
+					<div class="opt_nav">
+						<h3>搜索排行</h3>
+					</div>
 				<br/>
 				<div class="artical">
 					<div class="box">
-					<div id="art2_pm">排名</div>
-					<div id="art2_gjc">关键词</div>
-						<div id="art2_sszs">搜索指数</div></div><hr/>
+					<div id="art2_pm"><h5>排名</h5></div>
+					<div id="art2_gjc">
+					  <h5>关键词</h5>
+					</div>
+						<div id="art2_sszs"><h5>搜索指数</h5></div></div><hr/>
 					
 					<div id="order">
 						<form>
@@ -222,13 +283,15 @@
 				</div>
 				</div>
 			</div>
-		<div>	
+		<div class="rim">	
 			<div class="opt"><a href="https://www.bilibili.com/"><h5>星雪世界</h5></a></div>
 			<div class="art3">
 				<h6><div id="more"><a href="https://www.baidu.com/link?url=0lZaYhHXYaOHGQHQNbnoWvh9VCgXsxqoygKXvuKEcM3&wd=&eqid=f75a2e580004361f000000025bab8d48"> more>> </a></div></h6>
-				<h3>网站介绍</h3><br/>
+				<div class="opt_nav">
+					<h3>网站介绍</h3><br/>
+				</div>
 				<div class="artical" id="intro">
-					<marquee direction="right"> 欢迎来到我们的世界！<br /></marquee><hr/>
+					<marquee direction="right" scrolldelay="1"> 欢迎来到我们的世界！<br /></marquee><hr/>
 					<h4 id="col1">--->”星雪百科“由&nbsp;星雪工作室&nbsp;制作<---</h4>
 					<h5 id="col1">这是一个属于雪夜星空的绝美故事</h5>
 					<h5 id="col1">我们是这个格式的缔造者，这个故事也由我们而变得生动美妙</h5>
